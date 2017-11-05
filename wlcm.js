@@ -25,7 +25,7 @@ HTMLElement.prototype.wlcm = function (wlcm_words=[]) {
 		// initializing starting top, speed and left
 		let top = getRandom(15, wlcm_contenaier.clientHeight-17, true);
 		let left = getRandom(-100, wlcm_contenaier.clientWidth, true);
-		let speed = getRandom(1, 2);
+		let speed = getRandom(1, 3);
 
 		// setting speed
 		word_container.setAttribute("speed", speed);
