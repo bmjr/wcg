@@ -17,7 +17,8 @@ A pure javascript script to create word clouds!
 			"Hi!",
 			"Hallo!",
 			"Holla!",
-			"Γεία!"
+			"Γεία!",
+			"Bonjour!"
 		]);
 </script>
 ```
