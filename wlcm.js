@@ -1,6 +1,19 @@
-HTMLElement.prototype.wlcm = function (settings={}) { 
+HTMLElement.prototype.wlcm = function (settings={
+	"words": ["Hi!","Hallo!","Holla!","Γεία!","Bonjour!"],
+	"min_speed": 1, 
+	"max_speed": 3
+}) { 
 
+	//getting settings
 	var wlcm_words = settings.words;
+
+	var min_speed = settings.min_speed;
+	if (min_speed < 1) {
+		min_speed = 1;
+		console.log("wlcm min_speed must be greater than or equol 1.");
+	}
+	var max_speed = settings.max_speed;
+
 
 	// initializing wlcm container
 	var wlcm_contenaier = this;
@@ -23,7 +36,7 @@ HTMLElement.prototype.wlcm = function (settings={}) {
 		// initializing starting top, speed and left
 		let top = getRandom(15, wlcm_contenaier.clientHeight-17, true);
 		let left = getRandom(-100, wlcm_contenaier.clientWidth, true);
-		let speed = getRandom(1, 3);
+		let speed = getRandom(min_speed, max_speed);
 
 		// setting speed
 		word_container.setAttribute("speed", speed);
