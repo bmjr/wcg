@@ -13,12 +13,14 @@ A pure javascript script to create word clouds!
 		let welcome = document.getElementById("welcome");
 
 		// create wlcm object
-		welcome.wlcm([
-			"Hi!",
-			"Hallo!",
-			"Holla!",
-			"Γειά!",
-			"Bonjour!"
-		]);
+		welcome.wlcm({
+			"words": [
+				"Hi!",
+				"Hallo!",
+				"Holla!",
+				"Γεία!",
+				"Bonjour!"
+			]
+		});
 </script>
 ```

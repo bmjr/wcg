@@ -1,5 +1,6 @@
-HTMLElement.prototype.wlcm = function (wlcm_words=[]) { 
+HTMLElement.prototype.wlcm = function (settings={}) { 
 
+	var wlcm_words = settings.words;
 
 	// initializing wlcm container
 	var wlcm_contenaier = this;
@@ -12,15 +13,12 @@ HTMLElement.prototype.wlcm = function (wlcm_words=[]) {
 	*/
 	for (i=0;i<wlcm_words.length;i++) {
 
-
 		// create word element
 		let word_container = document.createElement("span");
-
 
 		// setting id and html
 		word_container.innerHTML = wlcm_words[i];
 		word_container.id = "wlcm_element";
-
 
 		// initializing starting top, speed and left
 		let top = getRandom(15, wlcm_contenaier.clientHeight-17, true);
@@ -85,7 +83,7 @@ HTMLElement.prototype.wlcm = function (wlcm_words=[]) {
 	*/
 	function getRandom(min, max, int = false) {
 		if (int) {
-	    	return Math.floor(Math.random() * (max - min + 1)) + min;
+			return Math.floor(Math.random() * (max - min + 1)) + min;
 		} else {
 			return Math.random() * (max - min) + min;
 		}
