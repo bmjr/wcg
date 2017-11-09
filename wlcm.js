@@ -3,17 +3,16 @@ HTMLElement.prototype.wlcm = function (settings={
 	"min_speed": 1, 
 	"max_speed": 3
 }) { 
+	
+	/* Setting settings default values */
+	settings.min_speed = typeof settings.min_speed !== 'undefined' ? settings.min_speed : 1;
+	settings.max_speed = typeof settings.max_speed !== 'undefined' ? settings.max_speed : 3;
 
-	//getting settings
-	var wlcm_words = settings.words;
-
-	var min_speed = settings.min_speed;
-	if (min_speed < 1) {
-		min_speed = 1;
+	// setting min speed
+	if (settings.min_speed < 1) {
+		settings.min_speed = 1;
 		console.log("wlcm min_speed must be greater than or equol 1.");
 	}
-	var max_speed = settings.max_speed;
-
 
 	// initializing wlcm container
 	var wlcm_contenaier = this;
@@ -24,19 +23,19 @@ HTMLElement.prototype.wlcm = function (settings={
 	/**
 	* Section to create words and append it to wlcm container
 	*/
-	for (i=0;i<wlcm_words.length;i++) {
+	for (i=0;i<settings.words.length;i++) {
 
 		// create word element
 		let word_container = document.createElement("span");
 
 		// setting id and html
-		word_container.innerHTML = wlcm_words[i];
+		word_container.innerHTML = settings.words[i];
 		word_container.id = "wlcm_element";
 
 		// initializing starting top, speed and left
 		let top = getRandom(15, wlcm_contenaier.clientHeight-17, true);
 		let left = getRandom(-100, wlcm_contenaier.clientWidth, true);
-		let speed = getRandom(min_speed, max_speed);
+		let speed = getRandom(settings.min_speed, settings.max_speed);
 
 		// setting speed
 		word_container.setAttribute("speed", speed);
