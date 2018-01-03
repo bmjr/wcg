@@ -33,9 +33,9 @@ HTMLElement.prototype.wlcm = function (settings={
 		word_container.id = "wlcm_element";
 
 		// initializing starting top, speed and left
-		let top = getRandom(15, wlcm_contenaier.clientHeight-17, true);
-		let left = getRandom(-100, wlcm_contenaier.clientWidth, true);
-		let speed = getRandom(settings.min_speed, settings.max_speed);
+		let top = getRandomNumber(15, wlcm_contenaier.clientHeight-17, true);
+		let left = getRandomNumber(-100, wlcm_contenaier.clientWidth, true);
+		let speed = getRandomNumber(settings.min_speed, settings.max_speed);
 
 		// setting speed
 		word_container.setAttribute("speed", speed);
@@ -93,7 +93,7 @@ HTMLElement.prototype.wlcm = function (settings={
 	/**
 	* Function for random numbers
 	*/
-	function getRandom(min, max, int = false) {
+	function getRandomNumber(min, max, int = false) {
 		if (int) {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		} else {
