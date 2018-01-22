@@ -16,7 +16,7 @@ Items shown on the word cloud are randomly picked from an array of strings to ke
 ### Cross platform support
 The word cloud generated will support all client web browser sizes.
 
-##Getting started
+## Getting started
 
 Include [wcg.js](wcg.js) inside your project and call the prototype function from wherever you desire.
 
