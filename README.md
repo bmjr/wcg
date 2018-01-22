@@ -43,7 +43,7 @@ e.g.
 ```
 
 ## Example
-<img src="wlcm.png" alt="wlcm image">
+<img src="wcg.png" alt="wlcm image">
 
 ## License
 
