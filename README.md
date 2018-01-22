@@ -8,7 +8,7 @@ An animated word/phrase/sentence cloud generator. Animate your chosen text acros
 WCG script will support words, phrases and sentences. **i.e. all things string**
 
 ### Non-stacking items
-Items will not stack on top of eachother due to WCG finding the correct regions for which to place the given items such that they won't stack
+Items will not stack on top of eachother due to WCG finding the correct regions for which to place the given items such that they won't stack.
 
 ### Randomize Items
 Items shown on the word cloud are randomly picked from an array of strings to keep the word cloud fresh (requires enough strings to accomplish this).
@@ -47,7 +47,7 @@ e.g.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
