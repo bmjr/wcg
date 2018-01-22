@@ -2,7 +2,7 @@
 
 An animated word/phrase/sentence cloud generator. Animate your chosen text across the screen easily with this plug and play javascript prototype function which can be used on any HTML container.
 
-##Features
+## Features
 
 ### Multiple Supported Item Types
 WCG script will support words, phrases and sentences. **i.e. all things string**
@@ -43,7 +43,7 @@ e.g.
 ```
 
 ## Example
-<img src="wlcm.png" alt="wlcm image">
+<img src="wcg.png" alt="wlcm image">
 
 ## License
 
